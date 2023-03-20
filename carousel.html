@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+     .con{
+        width: 100%;
+        height: 80vh;
+        position: relative;
+
+    }
+    .con img{
+        padding-top: 10vh;
+        width: 100%;
+        height: 80vh;
+        background-size: 100% 100%;
+    }
+    .text{
+        position: absolute;
+        top:30vh;
+        left: 10%;
+        color: blue;
+        font-size: 40px;
+
+    }
+   </style>
+   <script>
+    i=0
+    let a=["https://www.mydomaine.com/thmb/5aWeJChYRFpxrldmr-SS6WlCQ6o=/2125x1410/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-108313003-5a9e18f2bfb2431492fa41f5148717ff.jpg","https://th.bing.com/th/id/R.7993f46135aa0c3f0c315bbcc5dff4cc?rik=1403DSyGXptz1Q&riu=http%3a%2f%2fblog.mystart.com%2fwp-content%2fuploads%2f2017%2f04%2ficeland.jpeg&ehk=7tquAbqjMY03cP8PXGX3H9e3MziDaa74a7y3Dol9UKY%3d&risl=&pid=ImgRaw&r=0","https://th.bing.com/th/id/R.cdf4ab774fed6ab165b30e412a4b24c0?rik=mR7Fa0iTVir42Q&riu=http%3a%2f%2fcdn.onlyinyourstate.com%2fwp-content%2fuploads%2f2015%2f04%2feaglefalls.jpg&ehk=k2Lp8z26ysOYNLZXCZtaQdzzkvnT%2fBMOtdH4gRbic6Q%3d&risl=&pid=ImgRaw&r=0","https://i.pinimg.com/originals/7e/e6/92/7ee692d2e080ff45a825ca4926e20ad9.jpg","https://th.bing.com/th/id/R.cbecdd365e36f950f2b9ac67e978ed4d?rik=hBqxzf8OB2p9Bg&riu=http%3a%2f%2fimages2.fanpop.com%2fimages%2fphotos%2f8200000%2fWaterfalls-mountains-and-waterfalls-8243318-2560-1817.jpg&ehk=acP2dDvBrLlDWdDdz5BPCsxrY39NY9SQJK9EsVFsVVs%3d&risl=1&pid=ImgRaw&r=0","https://www.wallpaperflare.com/static/830/65/213/waterfall-nature-forest-waterfalls-wallpaper.jpg","https://th.bing.com/th/id/R.632d18c56308fa82e85e651d470e99e9?rik=hxdkPVnx0pOZDw&riu=http%3a%2f%2fimages2.fanpop.com%2fimages%2fphotos%2f5800000%2fMountains-Waterfalls-mountains-and-waterfalls-5836100-1600-1200.jpg&ehk=xmaDS3ckoXUVl%2faaEU7wOnd6Z6MykYdSIIc44rllub4%3d&risl=&pid=ImgRaw&r=0","https://4.bp.blogspot.com/-tsufwsWsV08/U9akuwhh3WI/AAAAAAAALpE/EV-xt8sJD9s/s1600/waterfall-x012.jpg","https://blog.mystart.com/wp-content/uploads/2017/04/Laos.jpeg","https://assets3.thrillist.com/v1/image/1470823/size/tmg-gift_guide_variable_2x/the-world-s-15-most-amazing-waterfalls"]
+    let data=[{Heading:"Heading1",cont:" contant of Heading 1"},
+        {Heading:"Heading2",cont:" contant of Heading 2"},
+        {Heading:"Heading 3",cont:" contant of Heading 3"},
+        {Heading :"Heading 4",cont:" contant of Heading 4"},
+        {Heading :"Heading 5",cont:" contant of Heading 5"},
+        {Heading :"Heading 6",cont:" contant of Heading 6"},
+        {Heading :"Heading 7",cont:" contant of Heading 7"},
+        {Heading :"Heading 8",cont:" contant of Heading 8"},
+        {Heading :"Heading 9",cont:" contant of Heading 9"}]
+    function fun()
+    {
+        let iref=document.getElementById("simg")
+        let hrf=document.getElementById("hd")
+        let brf=document.getElementById("bc")
+      
+      
+  
+    i++
+    if(i>a.length)
+    {
+        i=0
+    }
+    iref.src=a[i]
+    hrf.innerHTML=data[i].Heading
+    brf.innerHTML=data[i].cont
+   
+     }
+    setInterval(fun,1000)
+                                                            
+   </script>
+</head>
+<body>
+    <div class="con"> <img src="https://www.mydomaine.com/thmb/5aWeJChYRFpxrldmr-SS6WlCQ6o=/2125x1410/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-108313003-5a9e18f2bfb2431492fa41f5148717ff.jpg"  id="simg" >
+       <div class="text"> 
+        <h1 id="hd">Heading 1</h1>
+        <div id="bc"> contant of Heading 1</div>
+       </div>
+    </div>
+</body>
+</html>
